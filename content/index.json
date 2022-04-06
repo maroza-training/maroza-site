@@ -1,0 +1,132 @@
+{
+	"components": [
+		{
+			"name": "hero",
+			"fields": {
+				"title": "Let us empower you with critical professional skills",
+				"body": "we are a sustainable professional develepment agency founded on the principle of bring about transformation, bridging skills gap, and empowering future business leader with rigorous problem solving skills.",
+				"background": "blue",
+				"link": {
+					"title": "Connect with Us",
+					"url": "contact"
+				},
+				"image": "/banner-art.svg"
+			}
+		},
+		{
+			"name": "image_text_block",
+			"fields": {
+				"title": "We are a team of experienced and hard working skilled people",
+				"body": "Robert Zwane(CA)SA is a Senior Executive with extensive experience with Transformation and growth.MORE about Robert ....Lorem, link ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto",
+				"background": "blue",
+				"link": {
+					"title": "Check it out",
+					"url": "."
+				},
+				"image": {
+					"position": "right",
+					"url": "/lead.svg",
+					"alt": ""
+				}
+			}
+		},
+		{
+			"name": "image_text_block",
+			"fields": {
+				"title": "A company standing different from others",
+				"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+				"background": "",
+				"link": {
+					"title": "Check it out",
+					"url": "."
+				},
+				"image": {
+					"position": "left",
+					"url": "/service-3.svg",
+					"alt": "Generic bar chart"
+				}
+			}
+		},
+		{
+			"name": "grid",
+			"fields": {
+				"title": "Know our values",
+				"items": [
+					{
+						"title": "value 1",
+						"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+						"icon": "ti-pulse"
+					},
+					{
+						"title": "value 2",
+						"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+						"icon": "ti-package"
+					},
+					{
+						"title": "value 3",
+						"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+						"icon": "ti-alarm-clock"
+					},
+					{
+						"title": "value 4",
+						"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+						"icon": "ti-credit-card"
+					},
+					{
+						"title": "value 5",
+						"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+						"icon": "ti-headphone-alt"
+					},
+					{
+						"title": "value 6",
+						"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+						"icon": "ti-cloud-up"
+					}
+				]
+			}
+		},
+		{
+			"name": "banner",
+			"fields": {
+				"title": "Experience the best workflow with us",
+				"image": {
+					"url": "/screenshot.svg",
+					"alt": "People doing different marketing activities"
+				}
+			}
+		},
+
+		{
+			"name": "image_text_block",
+			"fields": {
+				"title": "We believe your skills should grow with your organization and you should be in the driver's seat.",
+				"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+				"background": "blue",
+				"link": {
+					"title": "Check it out",
+					"url": "."
+				},
+				"image": {
+					"position": "left",
+					"url": "/service-1.png",
+					"alt": "Revenue chart"
+				}
+			}
+		},
+		{
+			"name": "cta",
+			"fields": {
+				"title": "Ready to get started?",
+				"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.",
+				"image": {
+					"alt": "Two people building a webpage",
+					"url": "/cta.svg"
+				},
+				"link": {
+					"url": "contact",
+					"title": "Contact Us"
+				}
+			}
+		}
+	]
+}
