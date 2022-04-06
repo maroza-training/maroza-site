@@ -1,9 +1,9 @@
-name: github pages
+name: netlify deployment
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -17,7 +17,8 @@ jobs:
           entrypoint: /plenti
           args: build
 
-      - uses: jsmrcaga/action-netlify-deploy@v1.1.0
+	  - name: Deploy to Netlify
+        uses: jsmrcaga/action-netlify-deploy@v1.1.0
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.MY_TOKEN_SECRET }}
           NETLIFY_DEPLOY_TO_PROD: true
