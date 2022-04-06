@@ -17,10 +17,12 @@ jobs:
           entrypoint: /plenti
           args: build
 
-
-	  - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Setup Node
+        uses: actions/setup-node@v2-beta
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: public
+          node-version: '16'
+
+      - name: Deploy to Netlify
+        run: |
+          npm install netlify-cli -g
+          netlify deploy --prod --dir ./public --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=600 --message "Deployed on $(date)"
