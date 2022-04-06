@@ -15,11 +15,11 @@ jobs:
         uses: docker://plentico/plenti:latest
         with:
           entrypoint: /plenti
-          args: build
+          args: build --dir=build
 
 	  - name: Deploy to Netlify
-        uses: jsmrcaga/action-netlify-deploy@v1.1.0
+        uses: danakim/gh-action-deploy-netlify@master
         with:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.MY_TOKEN_SECRET }}
-          NETLIFY_DEPLOY_TO_PROD: true
-          build_directory: 'public'
+          AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
+          DEPLOY_PROD: true
