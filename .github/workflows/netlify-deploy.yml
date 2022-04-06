@@ -15,11 +15,12 @@ jobs:
         uses: docker://plentico/plenti:latest
         with:
           entrypoint: /plenti
-          args: build --dir=build
+          args: build
 
-	  - name: Deploy to Netlify
-        uses: danakim/gh-action-deploy-netlify@master
+
+	  - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
-          DEPLOY_PROD: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: public
